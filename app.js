@@ -12,8 +12,7 @@ function notifyMe() {
     // Check whether notification permissions have already been granted;
     // if so, create a notification
     const notification = new Notification("Hi there! it's already granted");
-    const button = document.getElementById("notificationButton");
-    button.remove();
+    
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
     Notification.requestPermission().then((permission) => {
