@@ -48,21 +48,21 @@
         </li>
        
       </ul>
-      <button id="reloadButton" class="btn btn-primary" style="display: none;">Reload Page</button>
 
       <div class="modal" id="updateModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header border-none">
-              <h5 class="modal-title">Update Available</h5>
+            <div class="modal-header">
+              <h5 class="modal-title text-center">Update Available</h5>
               
             </div>
-            <div class="modal-body">
+            <div class="modal-body border-none">
               <p>There is a new version of the application available.</p>
+              <div class="d-flex justify-content-center border-none">
+                <button type="button" class="btn btn-primary" id="updateButton">Update</button>
+              </div>
             </div>
-            <div class="modal-footer d-flex justify-content-center border-none">
-              <button type="button" class="btn btn-primary" id="updateButton">Update</button>
-            </div>
+            
           </div>
         </div>
       </div>
