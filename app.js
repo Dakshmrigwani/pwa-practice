@@ -64,8 +64,5 @@ function showUpdateModal() {
 }
 
 navigator.serviceWorker.addEventListener("controllerchange", () => {
-  const reloadButton = document.getElementById("reloadButton");
-  reloadButton.style.display = "inline-block";
-
   showUpdateModal();
 });
