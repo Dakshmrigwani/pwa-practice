@@ -1,5 +1,5 @@
-const staticCacheName = "static-cache-v6.51";
-const dynamicCacheName = "site-dynamic-v1.99";
+const staticCacheName = "static-cache-v6.53";
+const dynamicCacheName = "site-dynamic-v2.1";
 // we are storing the some data we can save that we have saved in assets variable
 const assets = [
   "/index.html",
@@ -10,6 +10,13 @@ const assets = [
   "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg",
   "https://fonts.googleapis.com/css?family=Poppins",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js",
+  "image1.jpg",
+  "image2.jpg",
+  "images3.jpg",
+  "image4.jpg",
+  "image5.jpg",
+  "image6.jpg",
+  "image7.jpg",
 ];
 
 // cache size limit function
