@@ -1,5 +1,6 @@
-const staticCacheName = "static-cache-v6.10";
-const dynamicCacheName = "site-dynamic-v1";
+const staticCacheName = "static-cache-v6.18";
+const dynamicCacheName = "site-dynamic-v1.3";
+// we are storing the some data we can save that we have saved in assets variable
 const assets = [
   "/",
   "/index.html",
@@ -25,9 +26,11 @@ const limitCacheSize = (name, size) => {
 
 self.addEventListener("install", (evt) => {
   console.log("Service worker has been installed", evt);
+  self.skipWaiting();
   evt.waitUntil(
     caches.open(staticCacheName).then((cache) => {
       return cache.addAll(assets);
+      // we are adding all the cache in the localstorage for improving the user experience
     })
   );
 });
@@ -37,7 +40,7 @@ self.addEventListener("activate", (evt) => {
   //console.log('service worker has been activated');
   evt.waitUntil(
     caches.keys().then((keys) => {
-      //console.log(keys);
+      console.log(keys);
       return Promise.all(
         keys
           .filter(
@@ -55,7 +58,7 @@ self.addEventListener("activate", (evt) => {
 
 self.addEventListener("fetch", (evt) => {
   console.log("fetch event", evt);
-  evt.respondwith(
+  evt.respondWith(
     caches
       .match(evt.request)
       .then((cacheRes) => {
@@ -64,10 +67,7 @@ self.addEventListener("fetch", (evt) => {
           fetch(evt.request).then((fetchRes) => {
             return caches.open(dynamicCacheName).then((cache) => {
               cache.put(evt.request.url, fetchRes.clone());
-              limitCacheSize(
-                dynamicCacheName,
-                5
-              ); /*we are limiting the cache size*/
+              limitCacheSize(dynamicCacheName, 5);
               return fetchRes;
             });
           })
@@ -80,3 +80,4 @@ self.addEventListener("fetch", (evt) => {
       })
   );
 });
+
