@@ -4,6 +4,13 @@ if ("serviceWorker" in navigator) {
     .then((res) => console.log("service worker register", res))
     .catch((err) => console.log("service worker not register", err));
 }
+
+// Check if the API is supported
+if ('setAppBadge' in navigator) {
+  navigator.setAppBadge(2).catch((error) => {
+      // Code to handle an error
+  });
+}
 function notifyMe() {
   if (!("Notification" in window)) {
     // Check if the browser supports notifications
