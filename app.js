@@ -6,11 +6,11 @@ if ("serviceWorker" in navigator) {
 }
 
 // Check if the API is supported
-if ('setAppBadge' in navigator) {
-  navigator.setAppBadge(2).catch((error) => {
-      // Code to handle an error
-  });
-}
+// if ('setAppBadge' in navigator) {
+//   navigator.setAppBadge(2).catch((error) => {
+//       // Code to handle an error
+//   });
+// }
 function notifyMe() {
   if (!("Notification" in window)) {
     // Check if the browser supports notifications
