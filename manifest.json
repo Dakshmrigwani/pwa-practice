@@ -10,18 +10,14 @@
       {
         "src": "/icons_192.jpg",
         "type": "image/jpg",
-        "sizes": "192x192"
+        "sizes": "130x130"
       },
       {
         "src": "/icons_72.jpg",
         "type": "image/jpg",
-        "sizes": "72x72"
-      },
-      {
-        "src": "/icons_48.png",
-        "type": "image/png",
-        "sizes": "48x48"
+        "sizes": "288x175"
       }
+     
     ],
     "id": "/?source=pwa",
     "start_url": "index.html",
