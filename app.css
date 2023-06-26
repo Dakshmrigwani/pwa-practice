@@ -19,8 +19,9 @@ body {
 }
 .image {
 	width: inherit;
-	margin-right: -2.5rem;
+	margin-right: -50%;
 	transition: transform 0.3s;
+	border-radius: 14px;
   }
   
   .image:hover {
