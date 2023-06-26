@@ -7,9 +7,13 @@ body {
 .img_wrap{
 	width:50px;
 }
+
 .font-size1{
 	font-size: small;
 }
 .button-color{
-	background-color:#e9ecef;
+	background-color:white;
+}
+.button-color:hover{
+	background-color:white ;
 }
