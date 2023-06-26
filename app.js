@@ -34,10 +34,10 @@ function notifyMe() {
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them anymore.
 }
-
-Notification.requestPermission().then(function (result) {
-  console.log(result);
-});
+// it helps to identify the permission is granted or not
+// Notification.requestPermission().then(function (result) {
+//   console.log(result);
+// });
 
 // const options = {
 // 	body: "Your code submission has received 3 new review comments.",
