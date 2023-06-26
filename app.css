@@ -17,3 +17,12 @@ body {
 .button-color:hover{
 	background-color:white ;
 }
+.image {
+	width: inherit;
+	margin-right: -2.5rem;
+	transition: transform 0.3s;
+  }
+  
+  .image:hover {
+	transform: scale(1.2);
+  }

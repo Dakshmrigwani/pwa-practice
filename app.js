@@ -72,3 +72,15 @@ function showUpdateModal() {
 navigator.serviceWorker.addEventListener("controllerchange", () => {
   showUpdateModal();
 });
+
+const images = document.querySelectorAll('.image');
+
+images.forEach((image) => {
+  image.addEventListener('mouseover', () => {
+    image.style.transform = 'scale(1.2)';
+  });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transform = 'none';
+  });
+});
