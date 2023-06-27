@@ -12,10 +12,10 @@ body {
 	font-size: small;
 }
 .button-color{
-	background-color:white;
+	background-color:rgb(253,253,253);
 }
 .button-color:hover{
-	background-color:white ;
+	background-color:rgb(173, 165, 165) ;
 }
 .image {
 	width: inherit;
