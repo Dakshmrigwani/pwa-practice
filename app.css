@@ -12,10 +12,10 @@ body {
 	font-size: small;
 }
 .button-color{
-	background-color:rgb(253,253,253);
+	background-color:white;
 }
 .button-color:hover{
-	background-color:rgb(173, 165, 165) ;
+	background-color:#efefef ;
 }
 .image {
 	width: 45px;
