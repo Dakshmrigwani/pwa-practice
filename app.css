@@ -27,8 +27,8 @@ body {
   .image:hover {
 	transform: scale(1.2);
   }
-.img-wrap2{
-	height:280px;
+.img_wrap2{
+	height:400px;
 	width:100%;
 	display: flex;
 	
