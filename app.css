@@ -18,7 +18,7 @@ body {
 	background-color:rgb(173, 165, 165) ;
 }
 .image {
-	width: inherit;
+	width: 45px;
 	margin-right: -50%;
 	transition: transform 0.3s;
 	border-radius: 14px;
