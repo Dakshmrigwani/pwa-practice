@@ -1,5 +1,5 @@
-const staticCacheName = "static-cache-v7.49";
-const dynamicCacheName = "site-dynamic-v3.08";
+const staticCacheName = "static-cache-v7.51";
+const dynamicCacheName = "site-dynamic-v3.10";
 // we are storing the some data we can save that we have saved in assets variable
 const assets = [
   "/index.html",
