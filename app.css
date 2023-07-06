@@ -33,3 +33,6 @@ body {
     display: flex;
 	
   }
+  .startpad{
+	padding-left: 75px;
+  }
